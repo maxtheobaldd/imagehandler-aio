@@ -7,6 +7,10 @@ This tool will:
  - Resize images to a specified width and height
  - Save the processed images as .JPG files in a new folder named "Processed" in the input folder
 
+## Pre-compiled Binaries
+
+Click releases on the right-hand side to find a standalone exe
+
 ## Running from Source
 
  1. Download and install Python (ensure that Python.exe is added to PATH during installation)
