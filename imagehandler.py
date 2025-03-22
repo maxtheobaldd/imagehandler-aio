@@ -19,7 +19,7 @@ ascii_art = r"""
 Image Handler All-in-One V1.1 by Max
 
 This script will:
- - Accept a folder containing images (.jpg, .jpeg, .png, .bmp, .gif, .tiff are suppported)
+ - Accept a folder containing images (.jpg, .jpeg, .png, .bmp, .gif, .tiff, .webp are suppported)
  - Crop them slightly when requested to enlarge the product itself (12% from each side)
  - Replace transparency in PNG images with white background
  - Resize images to a specified width and height
@@ -65,7 +65,7 @@ def batch_crop_images(input_dir, output_dir, total_images):
         os.makedirs(output_dir)
     
     # Get list of valid image files
-    image_files = [f for f in os.listdir(input_dir) if f.lower().endswith((".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff"))]
+    image_files = [f for f in os.listdir(input_dir) if f.lower().endswith((".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".webp"))]
     
     # Use tqdm for progress visualization
     with tqdm(total=len(image_files), desc="Cropping", unit="image") as pbar:
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     cropped_directory = None
 
     # Count total images to process
-    total_images = len([f for f in os.listdir(input_directory) if f.lower().endswith((".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff"))])
+    total_images = len([f for f in os.listdir(input_directory) if f.lower().endswith((".jpg", ".jpeg", ".png", ".bmp", ".gif", ".tiff", ".webp"))])
     if total_images == 0:
         print("No valid images found in the selected folder. Exiting.")
         exit()
