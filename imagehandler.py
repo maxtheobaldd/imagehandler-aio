@@ -16,7 +16,7 @@ ascii_art = r"""
                          __/ |                                                                     
                         |___/                                                                      
 
-Image Handler All-in-One V1.1 by Max
+Image Handler All-in-One V1.2 by Max
 
 This script will:
  - Accept a folder containing images (.jpg, .jpeg, .png, .bmp, .gif, .tiff, .webp are suppported)
